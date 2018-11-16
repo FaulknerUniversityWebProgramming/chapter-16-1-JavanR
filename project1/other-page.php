@@ -42,7 +42,25 @@
                 <div class="mdl-card__supporting-text">
                     
                     <?php
-     
+                      if (isset($_COOKIE['theme']))
+                      {
+                        echo 'Selected theme is ' . $_COOKIE['theme'];
+                        echo '</br>';
+                      }
+                      else
+                      {
+                        echo 'No theme was selected.';
+                        echo '</br>';
+                      }
+                  
+                      if (isset($_COOKIE['philosopher']))
+                      {
+                        echo 'Selected philosopher is ' . $_COOKIE['philosopher'];
+                      }
+                      else
+                      {
+                        echo 'No philosopher was selected.';
+                      }
                     ?> 
                     
                     
